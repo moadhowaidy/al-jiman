@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-primary: #005A9C;
+  --color-blue-dark: #003F6E;
+  --color-blue-light: #0070C4;
+  --color-gold-primary: #C5A059;
+  --color-gold-rich: #D4AF37;
+  --color-gold-light: #E8CC7A;
+  --color-gold-dark: #A07830;
+  --color-white: #FFFFFF;
+  --color-off-white: #F8F7F5;
+  --color-gray-soft: #F0EEE9;
+  --color-gray-mid: #6B7280;
+  --color-gray-dark: #374151;
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #4A5568;
+
+  --font-cairo: "Cairo", sans-serif;
+  --font-tajawal: "Tajawal", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --shadow-gold: 0 4px 24px rgba(197, 160, 89, 0.25);
+  --shadow-blue: 0 4px 24px rgba(0, 90, 156, 0.2);
+  --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #1A1A2E;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* RTL/LTR font switching */
+html[dir="ltr"] body {
+  font-family: "Inter", "Cairo", sans-serif;
+}
+
+html[dir="rtl"] body {
+  font-family: "Cairo", "Tajawal", sans-serif;
+}
+
+/* Liquid Sweep animation */
+@keyframes liquidSweepLTR {
+  0%   { clip-path: inset(0 100% 0 0); opacity: 0; }
+  30%  { opacity: 1; }
+  100% { clip-path: inset(0 0% 0 0); opacity: 1; }
+}
+
+@keyframes liquidSweepRTL {
+  0%   { clip-path: inset(0 0 0 100%); opacity: 0; }
+  30%  { opacity: 1; }
+  100% { clip-path: inset(0 0 0 0%); opacity: 1; }
+}
+
+.liquid-sweep-ltr {
+  animation: liquidSweepLTR 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.liquid-sweep-rtl {
+  animation: liquidSweepRTL 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Gold shimmer for headings */
+.gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #D4AF37 40%, #E8CC7A 60%, #C5A059 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section divider */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #C5A059, transparent);
+  opacity: 0.4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F0EEE9; }
+::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid #C5A059;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button { transition: all 0.2s ease; }
