@@ -8,14 +8,15 @@ interface HeroProps {
   lang: Language;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    transition: { delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] },
   }),
-};
+} as any;
 
 export default function Hero({ lang }: HeroProps) {
   const isAr = lang === "ar";
