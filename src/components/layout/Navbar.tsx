@@ -60,11 +60,7 @@ export default function Navbar({ lang, onToggleLang }: NavbarProps) {
 
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group shrink-0">
-              <div className="w-11 h-11 rounded-full bg-blue-primary flex items-center justify-center shadow-blue group-hover:scale-105 transition-transform duration-200">
-                <span className="text-white font-bold text-lg leading-none">
-                  {lang === "ar" ? "ج" : "J"}
-                </span>
-              </div>
+              <img src="/al-jiman-logo.png" alt="Al-Jiman Company Logo" className="h-12 sm:h-14 w-auto object-contain shrink-0" />
               <div className="hidden sm:block">
                 <p className={[
                   "font-bold leading-tight transition-colors duration-200",
@@ -165,13 +161,16 @@ export default function Navbar({ lang, onToggleLang }: NavbarProps) {
               ].join(" ")}
             >
               <div className="flex items-center justify-between p-5 border-b border-gray-100">
-                <div>
-                  <p className="font-bold text-blue-primary">
-                    {lang === "ar" ? company.shortNameAr : company.shortNameEn}
-                  </p>
-                  <p className="text-[10px] text-gold-primary font-medium uppercase tracking-wider">
-                    {lang === "ar" ? "مقاولات • عقارات" : "Contracting • Real Estate"}
-                  </p>
+                <div className="flex items-center gap-3">
+                  <img src="/al-jiman-logo.png" alt="Al-Jiman Company Logo" className="h-10 w-auto object-contain shrink-0" />
+                  <div>
+                    <p className="font-bold text-blue-primary">
+                      {lang === "ar" ? company.shortNameAr : company.shortNameEn}
+                    </p>
+                    <p className="text-[10px] text-gold-primary font-medium uppercase tracking-wider">
+                      {lang === "ar" ? "مقاولات • عقارات" : "Contracting • Real Estate"}
+                    </p>
+                  </div>
                 </div>
                 <button
                   onClick={() => setMenuOpen(false)}

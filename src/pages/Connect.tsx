@@ -50,7 +50,7 @@ export default function Connect({ lang }: ConnectProps) {
   return (
     <main>
       {/* Page hero */}
-      <section className="relative bg-[#0A1628] pt-36 pb-24 overflow-hidden">
+      <section className="relative w-full bg-[#0A1628] pt-32 pb-16 flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_0%,rgba(0,90,156,0.5),transparent)]" />
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -60,12 +60,12 @@ export default function Connect({ lang }: ConnectProps) {
             backgroundSize: "60px 60px",
           }}
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col gap-4 px-4">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/70 text-xs font-semibold uppercase tracking-widest mb-6"
+            className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/70 text-xs font-semibold uppercase tracking-widest"
           >
             {isAr ? "تواصل معنا" : "Get In Touch"}
           </motion.span>
@@ -73,7 +73,7 @@ export default function Connect({ lang }: ConnectProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] tracking-tight text-white mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-snug tracking-tight text-white"
           >
             {isAr ? (
               <>لنبدأ <span style={{ color: "#C5A059" }}>مشروعك</span></>

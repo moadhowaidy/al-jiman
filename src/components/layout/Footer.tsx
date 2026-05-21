@@ -35,11 +35,7 @@ export default function Footer({ lang }: FooterProps) {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-full bg-blue-primary flex items-center justify-center shadow-blue">
-                <span className="text-white font-bold text-xl leading-none">
-                  {isAr ? "ج" : "J"}
-                </span>
-              </div>
+              <img src="/al-jiman-logo.png" alt="Al-Jiman Company Logo" className="h-16 md:h-20 w-auto object-contain shrink-0 mb-4" />
               <div>
                 <p className="font-bold text-white text-base">
                   {isAr ? company.shortNameAr : company.shortNameEn}
@@ -132,10 +128,13 @@ export default function Footer({ lang }: FooterProps) {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-500 text-xs text-center sm:text-start">
             © {new Date().getFullYear()}{" "}
             {isAr ? company.shortNameAr : company.shortNameEn}.{" "}
             {isAr ? "جميع الحقوق محفوظة." : "All rights reserved."}
+            <span className="block sm:inline sm:ms-2 mt-1 sm:mt-0 text-[10px] sm:border-s sm:border-gray-700 sm:ps-2">
+              Powered by <a href="https://swiftscaled.com" target="_blank" rel="noopener noreferrer" className="text-[#8a0303] hover:text-[#b80404] transition-colors font-medium" dir="ltr">SWIFTSCAL</a>
+            </span>
           </p>
           <p className="text-gray-600 text-xs">
             {isAr ? "ترهونة، ليبيا" : "Tarhuna, Libya"}

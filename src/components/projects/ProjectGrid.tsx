@@ -50,7 +50,7 @@ export default function ProjectGrid({ lang }: ProjectGridProps) {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section ref={ref} className="py-24 bg-white">
+    <section ref={ref} className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Filter pills */}
@@ -96,21 +96,21 @@ export default function ProjectGrid({ lang }: ProjectGridProps) {
                   className="group bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-[#C5A059]/40 hover:shadow-xl transition-all duration-300"
                 >
                   {/* Card visual band */}
-                  <div
-                    className="relative w-full h-[200px] bg-gradient-to-br from-[#0A1628] to-[#005A9C] overflow-hidden"
-                    style={{ aspectRatio: "16/9" }}
-                  >
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon size={56} className="text-white/10" strokeWidth={1} />
-                    </div>
-                    <div className="absolute inset-0 bg-[#C5A059]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute top-3 end-3">
+                  <div className="relative w-full h-56 overflow-hidden rounded-t-xl shrink-0">
+                    <img
+                      src={project.imageUrl}
+                      alt={isAr ? project.titleAr : project.titleEn}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-[#0A1628]/50 mix-blend-multiply"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/95 via-[#0A1628]/40 to-transparent"></div>
+                    <div className="absolute top-3 end-3 z-10">
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/30 backdrop-blur-sm text-white text-[10px] font-mono">
                         <FileText size={9} />
                         {project.contractNumber}
                       </span>
                     </div>
-                    <div className="absolute bottom-3 start-3">
+                    <div className="absolute bottom-3 start-3 z-10">
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#C5A059]/90 text-white text-[10px] font-semibold">
                         <Calendar size={9} />
                         {project.year}

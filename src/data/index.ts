@@ -78,6 +78,7 @@ export const projects = [
     contractNumber: "32/2024",
     category: "roads",
     year: "2024",
+    imageUrl: "/images/al_tarqia_road.png",
   },
   {
     id: 2,
@@ -90,6 +91,7 @@ export const projects = [
     contractNumber: "140/2024",
     category: "roads",
     year: "2024",
+    imageUrl: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 3,
@@ -102,6 +104,7 @@ export const projects = [
     contractNumber: "280/2002",
     category: "buildings",
     year: "2002",
+    imageUrl: "/images/school_construction.png",
   },
   {
     id: 4,
@@ -114,6 +117,7 @@ export const projects = [
     contractNumber: "2023",
     category: "roads",
     year: "2023",
+    imageUrl: "/images/urgent_road_construction.png",
   },
   {
     id: 5,
@@ -126,6 +130,7 @@ export const projects = [
     contractNumber: "3/2024",
     category: "maintenance",
     year: "2024",
+    imageUrl: "/images/pavement_maintenance.png",
   },
   {
     id: 6,
@@ -138,6 +143,7 @@ export const projects = [
     contractNumber: "681/2006",
     category: "realestate",
     year: "2006",
+    imageUrl: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop",
   },
 ];
 
