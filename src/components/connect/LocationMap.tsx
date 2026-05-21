@@ -42,7 +42,7 @@ export default function LocationMap({ lang }: LocationMapProps) {
         <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
           <iframe
             src={contact.mapEmbedUrl}
-            title={isAr ? "موقع شركة الجيمان — ترهونة" : "Al-Jiman Company Location — Tarhuna"}
+            title={isAr ? "موقع شركة الجيحان — ترهونة" : "Jihan Company Location — Tarhuna"}
             className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}
             allowFullScreen

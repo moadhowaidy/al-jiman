@@ -68,8 +68,8 @@ export default function Home({ lang }: HomeProps) {
             className="text-white/65 text-lg font-normal leading-relaxed mb-10 max-w-2xl mx-auto"
           >
             {isAr
-              ? "فريق الجيمان جاهز للاستماع إليك. سواء كان مشروعاً طرقياً أو إنشائياً أو عقارياً — نحن شريكك الاستراتيجي."
-              : "The Al-Jiman team is ready to listen. Whether a road, building, or real estate project — we are your strategic partner."}
+              ? "فريق الجيحان جاهز للاستماع إليك. سواء كان مشروعاً طرقياً أو إنشائياً أو عقارياً — نحن شريكك الاستراتيجي."
+              : "The Jihan team is ready to listen. Whether a road, building, or real estate project — we are your strategic partner."}
           </motion.p>
 
           <motion.div

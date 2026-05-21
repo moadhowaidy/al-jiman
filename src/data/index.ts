@@ -1,8 +1,8 @@
 export const company = {
-  nameAr: "شركة الجيمان للمقاولات العامة والاستثمار العقاري",
-  nameEn: "Al-Jiman Company for General Contracting and Real Estate Investment",
-  shortNameAr: "الجيمان",
-  shortNameEn: "Al-Jiman",
+  nameAr: "شركة الجيحان للمقاولات العامة والاستثمار العقاري",
+  nameEn: "Jihan Company for General Contracting and Real Estate Investment",
+  shortNameAr: "الجيحان",
+  shortNameEn: "Jihan",
   established: "29 / 04 / 2010",
   commercialRegister: "053/21593",
   licenseNumber: "1044121593",
@@ -11,7 +11,7 @@ export const company = {
 };
 
 export const contact = {
-  emails: ["info@al-jiman.com", "algihan.co@gmail.com"],
+  emails: ["info@jihan123.com", "algihan.co@gmail.com"],
   phone: "+218 91 371 2787",
   whatsapp: "+218923779640",
   whatsappDisplay: "+218 92 377 9640",
@@ -20,8 +20,8 @@ export const contact = {
 };
 
 export const about = {
-  en: "At Al-Jiman Company for General Contracting and Real Estate Investment, we do not just build structures; we establish landmarks. Grounded in Tarhuna City, our foundation is built on unyielding structural integrity, premium material sourcing, and visionary real estate development.",
-  ar: "في شركة الجيمان للمقاولات العامة والاستثمار العقاري، نحن لا نبني مجرد هياكل؛ بل نؤسس معالم حضارية. انطلاقاً من مقرنا الرئيسي في مدينة ترهونة، ترتكز أسسنا على المتانة الهندسية المطلقة، واستخدام أجود المواد، والرؤية المستقبلية.",
+  en: "At Jihan Company for General Contracting and Real Estate Investment, we do not just build structures; we establish landmarks. Grounded in Tarhuna City, our foundation is built on unyielding structural integrity, premium material sourcing, and visionary real estate development.",
+  ar: "في شركة الجيحان للمقاولات العامة والاستثمار العقاري، نحن لا نبني مجرد هياكل؛ بل نؤسس معالم حضارية. انطلاقاً من مقرنا الرئيسي في مدينة ترهونة، ترتكز أسسنا على المتانة الهندسية المطلقة، واستخدام أجود المواد، والرؤية المستقبلية.",
 };
 
 export const stats = [

@@ -108,7 +108,7 @@ export default function Hero({ lang }: HeroProps) {
             className="text-white/70 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl"
           >
             {isAr
-              ? "شركة الجيمان للمقاولات العامة والاستثمار العقاري — رائدة في تنفيذ الطرق والبنية التحتية والمشاريع الإنشائية في ليبيا منذ 2010."
+              ? "شركة الجيحان للمقاولات العامة والاستثمار العقاري — رائدة في تنفيذ الطرق والبنية التحتية والمشاريع الإنشائية في ليبيا منذ 2010."
               : `${company.nameEn} — leading Libya's infrastructure, road construction, and real estate development since 2010.`}
           </motion.p>
 

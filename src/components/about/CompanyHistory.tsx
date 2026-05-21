@@ -147,8 +147,8 @@ export default function CompanyHistory({ lang }: CompanyHistoryProps) {
                 <div className="mt-8 pt-6 border-t border-white/10">
                   <p className="text-white/40 text-xs leading-relaxed">
                     {isAr
-                      ? "شركة الجيمان للمقاولات العامة والاستثمار العقاري — معتمدة ومرخصة للعمل في جميع أنحاء ليبيا."
-                      : "Al-Jiman Company for General Contracting and Real Estate Investment — authorized to operate across Libya."}
+                      ? "شركة الجيحان للمقاولات العامة والاستثمار العقاري — معتمدة ومرخصة للعمل في جميع أنحاء ليبيا."
+                      : "Jihan Company for General Contracting and Real Estate Investment — authorized to operate across Libya."}
                   </p>
                 </div>
               </div>

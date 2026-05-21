@@ -40,9 +40,9 @@ export default function About({ lang }: AboutProps) {
             className="text-3xl sm:text-5xl font-bold text-white"
           >
             {isAr ? (
-              <>نحن <span className="gold-gradient">الجيمان</span></>
+              <>نحن <span className="gold-gradient">الجيحان</span></>
             ) : (
-              <>We Are <span className="gold-gradient">Al-Jiman</span></>
+              <>We Are <span className="gold-gradient">Jihan</span></>
             )}
           </motion.h1>
           <motion.p

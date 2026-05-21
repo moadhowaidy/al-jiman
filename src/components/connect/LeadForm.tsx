@@ -53,8 +53,8 @@ export default function LeadForm({ lang }: LeadFormProps) {
 
     const waMessage = encodeURIComponent(
       isAr
-        ? `مرحباً، أودّ الاستفسار عن خدمات شركة الجيمان.\n\nالاسم: ${form.name}\nالهاتف: ${form.phone}\nالبريد: ${form.email || "—"}\nالخدمة: ${form.service}\nرسالة: ${form.message || "—"}`
-        : `Hello, I'd like to inquire about Al-Jiman's services.\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email || "—"}\nService: ${form.service}\nMessage: ${form.message || "—"}`
+        ? `مرحباً، أودّ الاستفسار عن خدمات شركة الجيحان.\n\nالاسم: ${form.name}\nالهاتف: ${form.phone}\nالبريد: ${form.email || "—"}\nالخدمة: ${form.service}\nرسالة: ${form.message || "—"}`
+        : `Hello, I'd like to inquire about Jihan's services.\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email || "—"}\nService: ${form.service}\nMessage: ${form.message || "—"}`
     );
 
     setTimeout(() => {

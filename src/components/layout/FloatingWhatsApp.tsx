@@ -50,8 +50,8 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
       <motion.a
         href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(
           isAr
-            ? "مرحباً، أود الاستفسار عن خدمات شركة الجيمان."
-            : "Hello, I would like to inquire about Al-Jiman's services."
+            ? "مرحباً، أود الاستفسار عن خدمات شركة الجيحان."
+            : "Hello, I would like to inquire about Jihan's services."
         )}`}
         target="_blank"
         rel="noopener noreferrer"
